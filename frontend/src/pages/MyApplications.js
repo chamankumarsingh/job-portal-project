@@ -13,7 +13,7 @@ function MyApplications() {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/applications/my",
+        "https://job-portal-project-b2sh.onrender.com/api/applications/my",
         {
           headers: {
             Authorization: token

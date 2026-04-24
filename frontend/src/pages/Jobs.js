@@ -10,7 +10,7 @@ function Jobs() {
 
   const fetchJobs = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/jobs");
+      const res = await axios.get("https://job-portal-project-b2sh.onrender.com/api/jobs");
       setJobs(res.data);
     } catch (err) {
       console.log(err);
@@ -23,7 +23,7 @@ function Jobs() {
       const token = localStorage.getItem("token");
 
       await axios.post(
-        `http://localhost:5000/api/applications/apply/${jobId}`,
+        `https://job-portal-project-b2sh.onrender.com/api/applications/apply/${jobId}`,
         {},
         {
           headers: {

@@ -20,7 +20,7 @@ function Login({ setIsLoggedIn }) {   // 👈 yahan change
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://job-portal-project-b2sh.onrender.com/api/auth/login",
         form
       );
 
